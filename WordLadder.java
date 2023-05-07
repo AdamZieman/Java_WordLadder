@@ -92,9 +92,7 @@ public class WordLadder {
                 filePath = "Resources/words.9.9";
                 break;
             default:
-                System.err.println("ERROR! Invalid length of word.");
-                System.exit(1);
-                return;
+                filePath = "Resources/words";
         }
 
         try (Scanner scanner = new Scanner(new File(filePath))) {
