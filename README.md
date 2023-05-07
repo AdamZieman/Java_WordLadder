@@ -13,6 +13,8 @@ This program allows you to find a word ladder between two given words using brea
 
 <p>The program first checks if the words are of the same character length. It then reads in the file containing a list of words for that character length. Next, it constructs a graph of nodes representing these words, and finds the shortest path from the starting word to the ending word, using the breadth-first seach algorithm.</p>
 
+![FoundWordLadder](https://user-images.githubusercontent.com/96446640/236695757-622bd124-053a-4f1c-9d4c-4b50ee4628b7.png)
+
 
 
 <!-- Limitations -->
@@ -24,3 +26,6 @@ This program allows you to find a word ladder between two given words using brea
   - A word bank exists for each character length between 3 and 9, inclusively.
   - A default word bank exists for character lengths, outside of the above range.
 - It only finds the shortest path between two words, if there is one.
+
+![NoFoundWordLadder](https://user-images.githubusercontent.com/96446640/236695796-68b809f5-647f-4f06-a5bc-bf839d2e03a9.png)
+![WordLengthNotSame](https://user-images.githubusercontent.com/96446640/236695829-dcbe00eb-481c-40a7-b6e9-f2ee1d6f2b2f.png)
