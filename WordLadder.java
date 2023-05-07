@@ -25,7 +25,7 @@ public class WordLadder {
             neighbor.neighbors.add(this);
         }
     }
-    public static void main(String[] args) throws Throwable {
+    public static void main(String[] args) {
         String start, end;      // The words on which the ladder is based
         Scanner keyboard = new Scanner(System.in);
 
