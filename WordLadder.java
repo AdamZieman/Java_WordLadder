@@ -69,31 +69,16 @@ public class WordLadder {
         String filePath;
         int len = start.length();
 
-        switch (len) {
-            case 3:
-                filePath = "Resources/words.3";
-                break;
-            case 4:
-                filePath = "Resources/words.4";
-                break;
-            case 5:
-                filePath = "Resources/words.5";
-                break;
-            case 6:
-                filePath = "Resources/words.6";
-                break;
-            case 7:
-                filePath = "Resources/words.7";
-                break;
-            case 8:
-                filePath = "Resources/words.8.8";
-                break;
-            case 9:
-                filePath = "Resources/words.9.9";
-                break;
-            default:
-                filePath = "Resources/words";
-        }
+        filePath = switch (len) {
+            case 3 -> "Resources/words.3";
+            case 4 -> "Resources/words.4";
+            case 5 -> "Resources/words.5";
+            case 6 -> "Resources/words.6";
+            case 7 -> "Resources/words.7";
+            case 8 -> "Resources/words.8.8";
+            case 9 -> "Resources/words.9.9";
+            default -> "Resources/words";
+        };
 
         try (Scanner scanner = new Scanner(new File(filePath))) {
             while (scanner.hasNextLine()) {
